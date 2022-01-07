@@ -1,0 +1,14 @@
+# Reverse a string
+# Aina Rabesoa
+# Nov.17h 2021
+
+def reverse(mystring):
+  # Base case
+  if len(mystring)== 0:
+    return mystring 
+  # Recursive call moving towards base case
+  else:
+  # Return reverse(mystring[1:])+,u string[0]
+    return mystring[-1] + reverse(mystring[:-1])
+  
+print(reverse("rabesoa"))
